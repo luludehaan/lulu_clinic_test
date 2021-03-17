@@ -1,4 +1,5 @@
 import React from 'react';
+
 const UserEdit = ({ user }) => {
   const { first_name, Last_name, id } = user
   const defaultFName = first_name ? first_name : ""

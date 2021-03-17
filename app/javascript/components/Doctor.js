@@ -5,7 +5,7 @@ const Doctor = ({ doctor }) => {
     <>
       <h1>Doctor: {name}</h1>
       <hr />
-      <a href={`/doctors/${id}/appointments`}>Appointments</a>
+      <a href={`/doctors/${id}/appointments`} class="btn waves-effect waves-light">View Appointments</a>
     </>
   )
 }

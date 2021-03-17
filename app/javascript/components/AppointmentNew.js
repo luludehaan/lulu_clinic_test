@@ -16,10 +16,13 @@ const AppointmentNew = ({ doctor, appointment, users }) => {
           id="time" 
           defaultValue={defaultTime}
         >
-          <option value="eight">Eight</option>
-          <option value="eleven">Eleven</option>
-          <option value="two">Two</option>
-          <option value="four">Four</option>
+          <option value="eight">8:00 AM</option>
+          <option value="nine">9:00 AM</option>
+          <option value="ten">10:00 AM</option>
+          <option value="eleven">11:00 AM</option>
+          <option value="one">1:00 PM</option>
+          <option value="two">2:00 PM</option>
+          <option value="four">4:00 PM</option>
         </select>
         <br />
         <label for="user_id">Choose a user:</label>

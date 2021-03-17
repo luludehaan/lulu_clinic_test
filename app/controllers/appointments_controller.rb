@@ -2,11 +2,15 @@ class AppointmentsController < ApplicationController
 before_action :set_doctor
   def index
     @eights = @doctor.appointments.where(time: 'eight')
+    @nines = @doctor.appointments.where(time: 'nine')
+    @tens = @doctor.appointments.where(time: 'ten')
     @elevens = @doctor.appointments.where(time: 'eleven')
+    @ones = @doctor.appointments.where(time: 'one')
     @twos = @doctor.appointments.where(time: 'two')
+    @threes = @doctor.appointments.where(time: 'three')
     @fours = @doctor.appointments.where(time: 'four')
     render component: "Appointments", props: { 
-      doctor: @doctor, eights: @eights, elevens: @elevens, twos: @twos, fours: @fours, users: User.all
+      doctor: @doctor, eights: @eights, nines: @nines, tens: @tens, elevens: @elevens, ones: @ones, twos: @twos, threes: @threes, fours: @fours, users: User.all
     }
   end
   def new

@@ -18,3 +18,19 @@
 $primary-color: color("cyan", "darken-4") !default;
 $secondary-color: color("cyan", "darken-4") !default;
 @import 'materialize';
+
+h5 {
+  color: color("cyan", "darken-2")
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column2 {
+  float: right;
+  width: 50%;
+  padding: 10px;
+}

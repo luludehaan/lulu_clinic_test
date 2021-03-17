@@ -9,11 +9,11 @@ const User = ({ user, full_name, doctors }) => {
           Delete User
         </a>
         <hr />
-        <h4>Doctors</h4>
+        <h4>{full_name}'s Doctors:</h4>
         <ul>
           { doctors.map( (d) => (
             <li>
-              <a href={`/doctors/${d.id}`}>{d.name}</a>
+              <h5>- <a href={`/doctors/${d.id}`}>{d.name}</a></h5>
             </li>
           ))}
         </ul>
