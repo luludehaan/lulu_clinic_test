@@ -1,16 +1,23 @@
 import React from "react";
-
-const User = ({ user }) => {
-  const { id, first_name, Last_name } = user
+const User = ({ user, full_name, doctors }) => {
+  const { id } = user;
   return (
     <>
-      <h1>Name: {Last_name}, {first_name}</h1>
-      <a href={`/users/${id}/edit`}>Edit your Info</a><br />
-      {/* <a href={`/users/${id}/appointments`}>Check your Appointments</a><br /> */}
-      <hr />
-      <a href={`/users/${id}`} data-method="delete" class="btn waves-effect waves-light red">Delete your account</a><br />
-      <a href={'/users'} class="btn waves-effect waves-light">Go Back </a>
-     
+      <div className="user-card"> 
+        <h1>{full_name}</h1>
+        <a href={`/users/${id}`} class="btn waves-effect waves-light red darken-4" data-method="delete">
+          Delete User
+        </a>
+        <hr />
+        <h4>Doctors</h4>
+        <ul>
+          { doctors.map( (d) => (
+            <li>
+              <a href={`/doctors/${d.id}`}>{d.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   )
 }
