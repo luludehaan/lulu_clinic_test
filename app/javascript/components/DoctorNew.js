@@ -13,7 +13,8 @@ const DoctorNew = ({ doctor }) => {
           defaultValue={defaultName}
           name="doctor[name]"
         />
-        <button type="submit">Add</button>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+  </button>
       </form>
     </>
   )

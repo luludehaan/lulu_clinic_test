@@ -19,6 +19,7 @@ const Users = ({ users }) => {
         </a>
           <br />
           <br />
+          <hr />
         </div>
         
       ))}

@@ -20,6 +20,7 @@ const Doctors = ({ doctors }) => {
         </a>
           <br />
           <br />
+          <hr />
         </div>
         
       ))}
