@@ -4,7 +4,7 @@ const Doctors = ({ doctors }) => {
   return (
     <>
       <h1>Doctors</h1>
-      <a href="/doctors/new" class="btn waves-effect waves-light red darken-4">Add Doctor</a>
+      <a href="/doctors/new" class="btn waves-effect waves-light">Add Doctor</a>
       <br />
       <h2>{doctors.length <= 0 ? "No Doctors" : ""}</h2>
       <h5>
